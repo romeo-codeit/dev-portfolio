@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevPortfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">Devflux<br><span>.io</span></div>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+      <nav aria-label="Main Navigation">
+        <a href="#" class="active">Home</a>
+        <a href="#">Skills</a>
+        <a href="#">Projects</a>
+        <a href="#">Services</a>
+        <a href="#">Contact Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Showcasing<br>My Work as a<br>Developer and<br>Data Analyst</h1>
+        <p>Welcome to DevPortfolio, where I present my projects and skills in web development and data analysis. My goal is to deliver high-quality solutions that meet your needs.</p>
+      </div>
+      <div class="hero-images">
+        <div class="hero-sub">
+          <div class="hero-img">
+            <img src="img/undraw_programming.png" alt="Programming illustration" loading="lazy">
+          </div>
+          <div>
+            <div class="image-card">Web Dev</div>
+            <div class="image-card">Data Analysis</div>
+            <div class="image-card">Portfolio</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <div class="social-links">
+      <div>GitHub</div>
+      <div>LinkedIn</div>
+      <div>Behance</div>
+      <div>Dribbble</div>
+      <div>Twitter</div>
+    </div>
+
+    <hr>
+
+    <section class="expertise-section">
+      <h2>Explore My Diverse Skill Set and Offerings.</h2>
+
+      <div class="expertise-wrapper">
+        <div class="expertise-image">
+          <div class="wrap-dots">
+            <img src="img/dots.png" alt="dots pattern" class="bg-dots" loading="lazy">
+          </div>
+          <div class="wrap-main-image">
+            <img src="img/Me working.png" alt="Working at computer" class="main-image" loading="lazy">
+          </div>
+          <div class="expertise-tag">Expertise</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section">
+      <div class="services-header">
+        <h2 class="services-title">My Services</h2>
+        <a href="#" class="view-all-btn">View All</a>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-item">
+          <div class="service-number">01</div>
+          <div class="service-name">Web</div>
+        </div>
+        <div class="service-item">
+          <div class="service-number">2</div>
+          <div class="service-name">Data Analysis</div>
+        </div>
+        <div class="service-item">
+          <div class="service-number">3</div>
+          <div class="service-name">Consulting</div>
+        </div>
+        <div class="service-item">
+          <div class="service-number">4</div>
+          <div class="service-name">UI/UX</div>
+        </div>
+        <div class="service-item">
+          <div class="service-number">5</div>
+          <div class="service-name">SEO</div>
+        </div>
+        <div class="service-item">
+          <div class="service-number">6</div>
+          <div class="service-name">Portfolio</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <h2 class="projects-title">Highlighted Projects</h2>
+
+      <div class="project-tags">
+        <span class="project-tag active">All</span>
+        <span class="project-tag">Web App</span>
+        <span class="project-tag">E-commerce</span>
+        <span class="project-tag">Mobile</span>
+        <span class="project-tag">Analytics</span>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=200&fit=crop" alt="Web Design" class="project-image" loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-subtitle">Web Design</p>
+            <a href="#" class="project-btn">Learn More</a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop" alt="Data Visualization" class="project-image" loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">Data Visualization</h3>
+            <p class="project-subtitle">Analytics Dashboard</p>
+            <a href="#" class="project-btn">Explore</a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=200&fit=crop" alt="E-commerce" class="project-image" loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">E-commerce</h3>
+            <p class="project-subtitle">Online Store</p>
+            <a href="#" class="project-btn">View Project</a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop" alt="Client Feedback App" class="project-image" loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">Client Feedback App</h3>
+            <p class="project-subtitle">Mobile Application</p>
+            <a href="#" class="project-btn">Discover</a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop" alt="Analytics Dashboard" class="project-image" loading="lazy">
+          <div class="project-content">
+            <h3 class="project-title">Analytics Dashboard</h3>
+            <p class="project-subtitle">Data Analytics</p>
+            <a href="#" class="project-btn">See Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  
+  <section class="testimonials-section">
+    <h2 class="testimonials-title">Testimonials</h2>
+    
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">AJ</div>
+          <div class="testimonial-info">
+            <h4>Alex Johnson</h4>
+            <p class="testimonial-role">CEO at Tech Solutions</p>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          <span class="testimonial-emoji">😊</span> A fantastic developer who delivers results! <span class="testimonial-emoji">😊</span>
+        </p>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">ML</div>
+          <div class="testimonial-info">
+            <h4>Maria Lee</h4>
+            <p class="testimonial-role">Marketing Director</p>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          <span class="testimonial-emoji">😊</span> Their insights transformed our data strategy! <span class="testimonial-emoji">😊</span>
+        </p>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <div class="testimonial-avatar">JS</div>
+          <div class="testimonial-info">
+            <h4>James Smith</h4>
+            <p class="testimonial-role">Project Manager</p>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          <span class="testimonial-emoji">😊</span> Professional and efficient, highly recommended! <span class="testimonial-emoji">😊</span>
+        </p>
+      </div>
+    </div>
+    
+    <div class="view-all-testimonials">
+      <a href="#" class="view-all-testimonials-btn">→ All Testimonials</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-content">
+      <div class="contact-text">
+        <h2>Testimonial: Client Satisfaction guaranteed</h2>
+        <p>Ready to bring your project to life? Let's discuss your needs and create something amazing together.</p>
+        <a href="#" class="contact-button">Get In Touch</a>
+      </div>
+      <div class="contact-visual">
+        <!-- This could contain an image or graphic -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Email</a></li>
+          <li><a href="#">Portfolio</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Projects</h3>
+        <ul>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Become a client</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Devflux.io. All rights reserved.</p>
+    </div>
+  </div>
+  </footer>
+
+
+
+    <script>
+    function toggleMenu() {
+      document.querySelector('nav').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
