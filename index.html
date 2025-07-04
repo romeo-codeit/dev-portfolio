@@ -12,14 +12,21 @@
 <body>
   <header>
     <div class="header-content">
-      <div class="logo">Devflux<br><span>.io</span></div>
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60" fill="none">
+        <!-- Diamond Icon -->
+        <path d="M20 30 L30 20 L40 30 L30 40 Z M30 20 L30 40 M20 30 L40 30" stroke="white" stroke-width="2" fill="none"/>
+        <!-- Brand Name -->
+        <text x="50" y="38" font-family="Montserrat, Helvetica, Arial, sans-serif" font-weight="bold" font-size="24" fill="white">devflux</text>
+      </svg>
+      </div>
       <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
-      <nav aria-label="Main Navigation">
-        <a href="#" class="active">Home</a>
+      <nav class="nav" aria-label="Main Navigation">
+        <a href="index.html" class="active">Home</a>
         <a href="#">Skills</a>
-        <a href="#">Projects</a>
+        <a href="projects.html">Projects</a>
         <a href="#">Services</a>
-        <a href="#">Contact Me</a>
+        <a href="contact.html">Contact Me</a>
       </nav>
     </div>
   </header>
@@ -84,29 +91,29 @@
           <div class="service-name">Web</div>
         </div>
         <div class="service-item">
-          <div class="service-number">2</div>
+          <div class="service-number">02</div>
           <div class="service-name">Data Analysis</div>
         </div>
         <div class="service-item">
-          <div class="service-number">3</div>
+          <div class="service-number">03</div>
           <div class="service-name">Consulting</div>
         </div>
         <div class="service-item">
-          <div class="service-number">4</div>
+          <div class="service-number">04</div>
           <div class="service-name">UI/UX</div>
         </div>
         <div class="service-item">
-          <div class="service-number">5</div>
+          <div class="service-number">05</div>
           <div class="service-name">SEO</div>
         </div>
         <div class="service-item">
-          <div class="service-number">6</div>
+          <div class="service-number">06</div>
           <div class="service-name">Portfolio</div>
         </div>
       </div>
     </section>
 
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
       <h2 class="projects-title">Highlighted Projects</h2>
 
       <div class="project-tags">
@@ -167,7 +174,7 @@
   </div>
 
   
-  <section class="testimonials-section">
+  <section class="testimonials-section" id="testimonials">
     <h2 class="testimonials-title">Testimonials</h2>
     
     <div class="testimonials-grid">
@@ -217,7 +224,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact-section">
+  <section class="contact-section" id="contact">
     <div class="contact-content">
       <div class="contact-text">
         <h2>Testimonial: Client Satisfaction guaranteed</h2>
@@ -230,42 +237,43 @@
     </div>
   </section>
 
+
+
+
   <!-- Footer -->
-  <footer class="footer">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>Services</h3>
-        <ul>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Email</a></li>
-          <li><a href="#">Portfolio</a></li>
-        </ul>
-      </div>
-      
-      <div class="footer-section">
-        <h3>Projects</h3>
-        <ul>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Become a client</a></li>
-        </ul>
-      </div>
-      
-      <div class="footer-section">
-        <h3>Contact</h3>
-        <ul>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
+  <footer class="footer2" id="contact">
+    <div class="container">
+      <div class="footer-content2">
+        <div class="footer-column2">
+          <h3>Testimonial : Client</h3>
+          <p class="footer-subtitle2">Satisfaction guaranteed</p>
+        </div>
+        <div class="footer-column2">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="footer-column2">
+          <h3>Projects</h3>
+          <ul>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Become a client</a></li>
+          </ul>
+        </div>
+        <div class="footer-column2">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; 2024 Devflux.io. All rights reserved.</p>
-    </div>
-  </div>
   </footer>
 
 
@@ -274,6 +282,14 @@
     function toggleMenu() {
       document.querySelector('nav').classList.toggle('open');
     }
+
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.addEventListener('click', function() {
+        document.querySelector('.mobile-menu').classList.remove('active');
+      });
+    });
   </script>
 </body>
 </html>

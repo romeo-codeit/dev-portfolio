@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevPortfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60" fill="none">
+          <!-- Diamond Icon -->
+          <path d="M20 30 L30 20 L40 30 L30 40 Z M30 20 L30 40 M20 30 L40 30" stroke="white" stroke-width="2" fill="none"/>
+          <!-- Brand Name -->
+          <text x="50" y="38" font-family="Montserrat, Helvetica, Arial, sans-serif" font-weight="bold" font-size="24" fill="white">devflux</text>
+        </svg>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+      <nav class="nav" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="#">Skills</a>
+        <a href="#" class="active">Projects</a>
+        <a href="#">Services</a>
+        <a href="contact.html">Contact Me</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <div class="projects-section2" id="projects">
+    <div class="container">
+      <h1 class="projects-title">Projects</h1>
+
+      <div class="projects-wrap">
+        <div class="projects-grid2 row-1">
+          <!-- Top Left: Web Development -->
+          <div class="project-card web-dev-card">
+            <div>
+              <div class="project-category">Web Development</div>
+              <h2 class="project-main-title">Innovative solutions for clients.</h2>
+            </div>
+            <button class="view-details-btn">View details</button>
+          </div>
+
+          <!-- Top Right: Featured -->
+          <div class="project-card featured-card">
+            <div class="featured-badge">Featured</div>
+          </div>
+        </div>
+
+        <div class="projects-grid2 row-2">
+          <!-- Bottom Left: Data Analysis Image -->
+          <div class="project-card data-analysis-card"></div>
+
+          <!-- Bottom Right: Data Analysis Content -->
+          <div class="project-card data-content-card">
+            <div>
+              <div class="data-category">Data Analysis</div>
+              <h2 class="data-title">Insights through data</h2>
+            </div>
+            <button class="view-details-btn-blue">View details</button>
+          </div>
+        </div>
+
+        <div class="projects-grid2 row-1">
+          <!-- Top Left: Client Work -->
+          <div class="project-card web-dev-card">
+            <div>
+              <div class="project-category">Client Work</div>
+              <h2 class="project-main-title">Transforming data into actionable insights.</h2>
+            </div>
+            <button class="view-details-btn">View details</button>
+          </div>
+
+          <!-- Top Right: Featured -->
+          <div class="project-card featured-card"></div>
+        </div>
+
+        <div class="projects-grid2 row-2">
+          <!-- Bottom Left: Data Analysis Image -->
+          <div class="project-card data-analysis-card"></div>
+
+          <!-- Bottom Right: Testimonials Content -->
+          <div class="project-card data-content-card">
+            <div>
+              <div class="data-category">Testimonials</div>
+              <h2 class="data-title">What clients say</h2>
+            </div>
+            <button class="view-details-btn-blue">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer2" id="contact">
+    <div class="container">
+      <div class="footer-content2">
+        <div class="footer-column2">
+          <h3>Testimonial : Client</h3>
+          <p class="footer-subtitle2">Satisfaction guaranteed</p>
+        </div>
+        <div class="footer-column2">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="footer-column2">
+          <h3>Projects</h3>
+          <ul>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Become a client</a></li>
+          </ul>
+        </div>
+        <div class="footer-column2">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('nav').classList.toggle('open');
+    }
+
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.addEventListener('click', function() {
+        document.querySelector('.mobile-menu').classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
