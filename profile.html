@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevFlux</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60" fill="none">
+        <!-- Diamond Icon -->
+        <path d="M20 30 L30 20 L40 30 L30 40 Z M30 20 L30 40 M20 30 L40 30" stroke="white" stroke-width="2" fill="none"/>
+        <!-- Brand Name -->
+        <text x="50" y="38" font-family="Montserrat, Helvetica, Arial, sans-serif" font-weight="bold" font-size="24" fill="white">devflux</text>
+      </svg>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+      <nav class="nav" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="project-next.html">Projects</a>
+        <a href="contact.html">Contact Me</a>
+        <a href="profile.html" class="active">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+  <!-- Hero Section -->
+  <section class="hero-section3">
+    <div class="hero-background3"></div>
+    <div class="hero-content3">
+      <div class="hero-text3">
+        <h1 class="hero-title3">Welcome to My Portfolio</h1>
+        <p class="hero-subtitle3">
+          Full Stack Developer specializing in modern web technologies and creating exceptional digital experiences.
+        </p>
+
+        <div class="hero-stats3">
+          <div class="stat-item3">
+            <span class="stat-number3">50+</span>
+            <span class="stat-label3">Projects</span>
+          </div>
+          <div class="stat-item3">
+            <span class="stat-number3">3+</span>
+            <span class="stat-label3">Years Experience</span>
+          </div>
+          <div class="stat-item3">
+            <span class="stat-number3">100+</span>
+            <span class="stat-label3">Happy Clients</span>
+          </div>
+        </div>
+
+        <div class="hero-buttons3">
+          <a href="#projects" class="hero-btn3 hero-btn-primary3">View My Work</a>
+          <a href="#contact" class="hero-btn3 hero-btn-secondary3">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="profile-card3">
+
+
+        <div class="profile-image3-wrapper">
+          <label for="profile-upload" class="profile-image3" id="profilePreview">
+            <span class="profile-initials3" id="initials">T D</span>
+            <div class="upload-overlay3">
+              <i class="upload-icon3">🖋️</i>
+            </div>
+            <input type="file" id="profile-upload" accept="image/*" hidden>
+          </label>
+        </div>
+
+        <h2 class="profile-name3">Timothy Divine</h2>
+        <p class="profile-title3">Full Stack Developer</p>
+
+        <div class="profile-stats3">
+          <div class="profile-stat3">
+            <span class="profile-stat-number3">50+</span>
+            <span class="profile-stat-label3">Projects</span>
+          </div>
+          <div class="profile-stat3">
+            <span class="profile-stat-number3">100</span>
+            <span class="profile-stat-label3">Followers</span>
+          </div>
+          <div class="profile-stat3">
+            <span class="profile-stat-number3">25</span>
+            <span class="profile-stat-label3">Following</span>
+          </div>
+        </div>
+
+        <div class="profile-actions3">
+          <button class="profile-btn3 profile-btn-primary3">Follow</button>
+          <button class="profile-btn3 profile-btn-secondary3">Message</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Reviews Section -->
+  <section class="reviews-section3">
+    <div class="reviews-container3">
+      <div class="reviews-sidebar3">
+        <div class="filter-section3">
+          <div class="filter-buttons3">
+            <button class="filter-btn3 active">All Categories</button>
+            <button class="filter-btn3">Web Development</button>
+            <button class="filter-btn3">Mobile Apps</button>
+            <button class="filter-btn3">UI/UX Design</button>
+            <button class="filter-btn3">E-commerce</button>
+          </div>
+        </div>
+
+        <div class="recent-projects3">
+          <h3>Recent Projects</h3>
+          <div class="project-item3">
+            <div class="project-icon3">🛒</div>
+            <div class="project-info3">
+              <div class="project-title3">E-commerce Platform</div>
+              <div class="project-subtitle3">Built a complete e-commerce</div>
+            </div>
+          </div>
+          <div class="project-item3">
+            <div class="project-icon3">⭐</div>
+            <div class="project-info3">
+              <div class="project-title3">Data Analytics</div>
+              <div class="project-subtitle3">Analyzed trends for 25+ clients</div>
+            </div>
+          </div>
+          <div class="project-item3">
+            <div class="project-icon3">📊</div>
+            <div class="project-info3">
+              <div class="project-title3">Data Scientist</div>
+              <div class="project-subtitle3">Designed data for business</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="overall-rating3">
+          <h3>Overall rating</h3>
+
+          <div class="rating-item3 rating-5">
+            <span class="rating-number">5</span>
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="rating-item3 rating-4">
+          <span class="rating-number">4</span>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+
+        <div class="rating-item3 rating-3">
+          <span class="rating-number">3</span>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+
+        <div class="rating-item3 rating-2">
+          <span class="rating-number">2</span>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+
+        <div class="rating-item3 rating-1">
+          <span class="rating-number">1</span>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+      <div class="reviews-content3">
+        <div class="reviews-header3">
+          <h2 class="reviews-title3">Client Reviews</h2>
+          <div class="sort-section3">
+            <span class="sort-label3">Sort by</span>
+            <select class="sort-select3">
+              <option>Most recent</option>
+              <option>Highest rated</option>
+              <option>Lowest rated</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="reviews-grid3">
+          <!-- Review Cards -->
+          <!-- First Review -->
+          <div class="review-card3">
+            <div class="review-header3">
+              <div class="review-avatar3">W</div>
+              <div class="review-info3">
+                <div class="review-title3">Web Development</div>
+                <div class="review-stars3">★★★★★</div>
+                <div class="review-meta3"><span>30 Upvotes</span><span>5 Downloads</span></div>
+              </div>
+            </div>
+            <div class="review-description3"><strong>Excellent service and support.</strong></div>
+            <div class="review-details3">😊 The website exceeded my expectations! 😊</div>
+            <div class="review-images3">
+              <div class="review-image3" style="background-image: url('...')"></div>
+              <div class="review-image3" style="background-image: url('...')"></div>
+            </div>
+          </div>
+
+          <!-- Second Review -->
+          <div class="review-card3">
+            <div class="review-header3">
+              <div class="review-avatar3" style="background-color: #9c27b0;">P</div>
+              <div class="review-info3">
+                <div class="review-title3">Portfolio Highlights</div>
+                <div class="review-stars3">★★★★★</div>
+                <div class="review-meta3"><span>45 Upvotes</span><span>8 Downloads</span></div>
+              </div>
+            </div>
+            <div class="review-description3"><strong>Great portfolio, needs more projects</strong></div>
+            <div class="review-details3">😊 This portfolio showcases impressive skills and creativity! 😊</div>
+          </div>
+
+          <!-- Third Review -->
+          <div class="review-card3">
+            <div class="review-header3">
+              <div class="review-avatar3" style="background-color: #607d8b;">W</div>
+              <div class="review-info3">
+                <div class="review-title3">Web Development</div>
+                <div class="review-stars3">★★★★★</div>
+                <div class="review-meta3"><span>70 Upvotes</span><span>3 Downloads</span></div>
+              </div>
+            </div>
+            <div class="review-description3"><strong>Excellent coding skills</strong></div>
+            <div class="review-details3">😊 The developer's attention to detail is remarkable, highly recommend! 😊</div>
+            <div class="review-images3">
+              <div class="review-image3" style="background-image: url('...')"></div>
+              <div class="review-image3" style="background-image: url('...')"></div>
+            </div>
+          </div>
+
+
+
+          <!-- fourth review -->
+          <div class="review-card3">
+            <div class="review-header3">
+              <div class="review-avatar3" style="background-color: #b08b27;">R</div>
+              <div class="review-info3">
+                <div class="review-title3">Data analysis</div>
+                <div class="review-stars3">★★★★</div>
+                <div class="review-meta3"><span>30 Upvotes</span><span>2 Downloads</span></div>
+              </div>
+            </div>
+            <div class="review-description3"><strong>Insightful data insights</strong></div>
+            <div class="review-details3">😊 Data analysis that drives results! 😊</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer2" id="contact">
+    <div class="container">
+      <div class="footer-content2">
+        <div class="footer-column2">
+          <h3>Testimonial : Client</h3>
+          <p class="footer-subtitle2">Satisfaction guaranteed</p>
+        </div>
+        <div class="footer-column2">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="footer-column2">
+          <h3>Projects</h3>
+          <ul>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Become a client</a></li>
+          </ul>
+        </div>
+        <div class="footer-column2">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+    <script>
+    function toggleMenu() {
+      document.querySelector('nav').classList.toggle('open');
+    }
+
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.addEventListener('click', function() {
+        document.querySelector('.mobile-menu').classList.remove('active');
+      });
+    });
+
+
+
+    // profile image
+    document.addEventListener("DOMContentLoaded", () => {
+      const preview = document.getElementById("profilePreview");
+      const initials = document.getElementById("initials");
+      const fileInput = document.getElementById("profile-upload");
+
+      // Load saved image
+      const savedImage = localStorage.getItem("profileImage");
+      if (savedImage) {
+        preview.style.backgroundImage = `url(${savedImage})`;
+        initials.style.display = "none";
+      }
+
+      // File input change handler
+      fileInput.addEventListener("change", (event) => {
+        const file = event.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const imageData = e.target.result;
+          preview.style.backgroundImage = `url(${imageData})`;
+          initials.style.display = "none";
+          localStorage.setItem("profileImage", imageData);
+        };
+        reader.readAsDataURL(file);
+      });
+    });
+  </script>
+</body>
+</html>
