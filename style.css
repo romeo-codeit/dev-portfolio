@@ -85,6 +85,16 @@ header {
   opacity: 0.9;
 }
 
+.svg-link2 {
+  text-decoration: none;
+  background-color: transparent;
+  display: inline-block;
+}
+
+.svg-link2:hover {
+  background-color: transparent;
+}
+
 nav {
   display: flex;
   gap: 0;
