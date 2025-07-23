@@ -1602,7 +1602,7 @@ hr {
   background-color: #2a2a2a;
   padding: 20px;
   border-radius: 8px;
-  width: 280px;
+  width: 100%;
 }
 
 .overall-rating3 h3 {
@@ -1789,7 +1789,7 @@ hr {
 
 
 
-/* FOR THE PROFILE NEXT PAGE */
+/* FOR THE PROJECT NEXT PAGE */
 
 
 
@@ -1823,7 +1823,7 @@ hr {
 
 .project-grid4 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-bottom: 40px;
 }
@@ -2670,8 +2670,13 @@ hr {
     max-width: 280px;
   }
   
+  .image-cards {
+    margin-top: -20px;
+    margin-left: -10%;
+  }
+
   .image-card {
-    padding: 0.8rem;
+    padding: 0.5rem;
     font-size: 0.9rem;
   }
   
@@ -2692,10 +2697,10 @@ hr {
     width: 120px;
     height: 100px;
   }
-  
+
   .wrap-main-image {
-    width: 180px;
-    height: 150px;
+    width: 280px;
+    height: 230px;
   }
   
   .expertise-tag {
@@ -2720,12 +2725,16 @@ hr {
   .project-content {
     padding: 1.2rem;
   }
-  .footer-content {
-    grid-template-columns: 1fr;
+  .footer-content2 {
+    grid-template-columns: 2fr;
   }
   
   .testimonial-card {
     padding: 1.5rem;
+  }
+
+  .contact-section {
+    width: 90vw;
   }
 
 
@@ -2949,6 +2958,7 @@ hr {
 
   .project-grid4 {
     gap: 1rem;
+    width: 95vw;
   }
 
   .project-info4 {
@@ -2968,10 +2978,18 @@ hr {
   .expertise-wrapper {
     height: 200px;
   }
+
+  .image-cards {
+    margin-left: -17%;
+  }
+  .image-card {
+    padding: 0.4rem;
+    margin-top: 27px;
+  }
   
   .wrap-main-image {
-    width: 150px;
-    height: 120px;
+    width: 230px;
+    height: 180px;
   }
   
   .expertise-tag {
@@ -2984,78 +3002,6 @@ hr {
   .projects-grid {
     gap: 1.5rem;
   }
-
-
-
-  
-
-
-
-  /* projects */
-
-  .container,
-  .header-content {
-    padding: 0 10px;
-  }
-
-  .logo {
-    font-size: 1.2rem;
-  }
-
-  .projects-title {
-    font-size: 1.8rem;
-  }
-
-  .project-main-title,
-  .data-title {
-    font-size: 1.3rem;
-    line-height: 1.3;
-  }
-
-  .web-dev-card,
-  .data-content-card{
-    padding: 15px;
-    min-height: 200px;
-  }
-
-  .project-category,
-  .data-category {
-    font-size: 0.75rem;
-    margin-bottom: 10px;
-  }
-
-  .view-details-btn,
-  .view-details-btn-blue{
-    padding: 8px 16px;
-    font-size: 0.75rem;
-  }
-
-  .featured-badge {
-    top: 15px;
-    right: 15px;
-    padding: 6px 12px;
-    font-size: 0.7rem;
-  }
-
-  .nav {
-    padding: 15px;
-    gap: 15px;
-  }
-
-  .footer-column2 h3 {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-  }
-
-  .footer-column2 ul li {
-    margin-bottom: 8px;
-  }
-
-  .footer-column2 ul li a {
-    font-size: 0.8rem;
-  }
-
-
 
 
 
@@ -3178,8 +3124,8 @@ hr {
   }
 
   .profile-image3 {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     font-size: 40px;
   }
 
@@ -3223,11 +3169,12 @@ hr {
 
 
   .my-projects4 {
-    padding: 0.5rem;
+    padding: 0.3rem;
   }
 
   .project-grid4 {
     gap: 0.75rem;
+    padding-right: -100px;
   }
 
   .project-info4 {
@@ -3241,4 +3188,6 @@ hr {
   .section-subtitle4 {
     font-size: 1rem;
   }
+
+
 }
