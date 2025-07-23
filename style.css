@@ -213,6 +213,11 @@ hr {
   box-shadow: var(--shadow);
 }
 
+.social-links a{
+  color: inherit;
+  text-decoration: none;
+}
+
 /* Expertise Section */
 .expertise-section {
   text-align: center;
